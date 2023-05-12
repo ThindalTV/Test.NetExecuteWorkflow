@@ -15,4 +15,4 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore src/Test.NetExecuteWorkflow/Test.NetExecuteWorkflow/Test.NetExecuteWorkflow.csproj
       - name: Execute
-        run: dotnet run --no-build --configuration Release --no-restore src/Test.NetExecuteWorkflow/Test.NetExecuteWorkflow/Test.NetExecuteWorkflow.csproj
+        run: dotnet run --no-build --configuration Release --no-restore --project src/Test.NetExecuteWorkflow/Test.NetExecuteWorkflow/Test.NetExecuteWorkflow.csproj
