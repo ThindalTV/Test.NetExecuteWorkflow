@@ -13,6 +13,6 @@ jobs:
       - name: Install dependencies
         run: dotnet restore
       - name: Build
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build --configuration Release --no-restore src/Test.NetExecuteWorkflow/Test.NetExecuteWorkflow/Test.NetExecuteWorkflow.csprojkflow/Test.NetExecuteWorkflow.csproj
       - name: Execute
-        run: dotnet run --no-build --configuration Release --no-restore
+        run: dotnet run --no-build --configuration Release --no-restore src/Test.NetExecuteWorkflow/Test.NetExecuteWorkflow/Test.NetExecuteWorkflow.csprojkflow/Test.NetExecuteWorkflow.csproj
