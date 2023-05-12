@@ -21,7 +21,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: output
-          path: Test.NetExecuteWorkflow/Test.NetExecuteWorkflow/out/result.json
+          path: Test.NetExecuteWorkflow/Test.NetExecuteWorkflow/out/
   upload-to-azure:
     runs-on: ubuntu-latest
     steps:  
