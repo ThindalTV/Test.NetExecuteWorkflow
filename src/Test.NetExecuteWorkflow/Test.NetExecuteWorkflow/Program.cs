@@ -8,4 +8,6 @@ if(!Directory.Exists("out"))
 
 string result = """{ "output": "value"}""";
 File.WriteAllText("out/result.json", result);
+var fi = new FileInfo("out/result.json");
+Console.WriteLine($"Path to file: {fi.FullName}");
 Console.WriteLine("Stop");
