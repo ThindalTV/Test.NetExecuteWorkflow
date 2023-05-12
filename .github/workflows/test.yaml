@@ -1,5 +1,6 @@
 name: Test run
 run-name: Just testing the absolute basics of executing a net application and catching the output
+on: push
 jobs:
   setup:
     runs-on: ubuntu-latest
