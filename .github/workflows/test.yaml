@@ -23,6 +23,7 @@ jobs:
           name: output
           path: Test.NetExecuteWorkflow/Test.NetExecuteWorkflow/out/
   upload-to-azure:
+    needs: execute-and-generate
     runs-on: ubuntu-latest
     steps:  
         - name: Download artifact
