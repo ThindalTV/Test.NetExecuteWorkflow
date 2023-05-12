@@ -11,7 +11,7 @@ jobs:
         with:
           dotnet-version: '7.0.x'
       - name: Install dependencies
-        run: dotnet restore
+        run: dotnet restore src/Test.NetExecuteWorkflow/Test.NetExecuteWorkflow/Test.NetExecuteWorkflow.csproj
       - name: Build
         run: dotnet build --configuration Release --no-restore src/Test.NetExecuteWorkflow/Test.NetExecuteWorkflow/Test.NetExecuteWorkflow.csprojkflow/Test.NetExecuteWorkflow.csproj
       - name: Execute
